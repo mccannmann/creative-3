@@ -13,6 +13,10 @@
 </template>
 
 <style>
+
+* {
+  margin: 0;
+}
 body{
   background-color: #d4eeff;
 }

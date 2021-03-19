@@ -72,4 +72,10 @@ h3 {
   font-size: 60px;
   margin: 5px;
 }
+
+@media only screen and (max-width: 650px) {
+  .title {
+    font-size: 30px;
+  }
+}
 </style>
