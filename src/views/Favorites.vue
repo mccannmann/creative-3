@@ -12,7 +12,6 @@
     </div>
     <FavMovies :favorites = "favorites"/>
   </div>
-
 </template>
 
 <script>

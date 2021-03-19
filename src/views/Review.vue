@@ -1,25 +1,33 @@
 <template>
-<div>
+<div class = "reviewContainer">
   <div class="movieInfo">
-    <div class = "titleHeader"
+    <div class = "titleHeader">
       <h1>{{this.movie.title}}</h1>
     </div>
     <div class = "genreHeader">
-      <h2>Genre</h2>
-      <p>{{this.movie.genre}}</p>
+      <h2 class = 'sectionTitle'><strong>Genre:</strong></h2>
+      <h2>{{this.movie.genre}}</h2>
     </div>
-    <div class "revenueHeader">
-      <h2>Box Office Revenue</h2>
-      <p>{{this.movie.box_office}}</p>
-      <h2>Dave's Projected Box Office Revenue</h2>
-      <p>{{this.movie.dave_box_office}}</p>
+    <div class ="revenueHeader">
+      <div class ="revenueRow">
+        <h2 class = 'sectionTitle'><strong>Box Office Revenue:</strong></h2>
+        <h2>{{this.movie.box_office}}</h2>
+      </div>
+      <div class ="revenueRow">
+        <h2 class = 'sectionTitle'><strong>Dave's Projected Box Office Revenue:</strong></h2>
+        <h2>{{this.movie.dave_box_office}}</h2>
+      </div>
     </div>
-  <h3>Dave's Comments:</h2>
-    <hr>
-  <p>{{this.movie.review}}</p>
-  <h3>Comments:</h2>
-    <hr>
-</div>
+    <div class = 'daveComment'>
+      <h3>Dave's Comments:</h3>
+      <hr>
+      <h2>{{this.movie.review}}</h2>
+      <div class = 'trollComments'>
+        <button>Troll Dave</button>
+        <p>Press this button to add an extra comment to mess with Dave's head</p>
+      </div>
+    </div>
+    </div>
 </div>
 </template>
 
@@ -45,9 +53,11 @@ export default {
 
   .titleHeader,
   .genreHeader,
-  .revenueHeader{
+  .revenueRow {
     display: flex;
     flex-direction: row;
+    padding:5px;
+    padding-left: 15px;
   }
 
   .titleHeader {
@@ -58,6 +68,17 @@ export default {
   }
   .revenueHeader {
     background-color: #5879ef;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sectionTitle {
+    padding-right: 10px;
+  }
+
+  .daveComment {
+    padding:5px;
+    padding-left: 15px;
   }
 
   h3 {

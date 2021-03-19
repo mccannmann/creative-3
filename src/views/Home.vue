@@ -11,7 +11,6 @@
     </div>
     <Movies :movies = "movies"/>
   </div>
-
 </template>
 
 <script>

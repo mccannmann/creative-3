@@ -5,7 +5,7 @@ let mock = [
   "box_office": "$267.88M",
   "dave_box_office": "$810633.16",
   "review": "drive sticky functionalities",
-  "dave_rank": 4,
+  "dave_rank": 4
 ,"comments": []}, {
   "title": "Foolproof",
   "genre": "Action|Comedy|Crime|Thriller",
